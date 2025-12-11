@@ -1,0 +1,100 @@
+.overview {
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.overviewContainer {
+    width: 320px;
+}
+
+.borderTop {
+    margin-top: -40px;
+}
+
+/* 
+.borderBottom {
+    margin-bottom: -40px;
+} */
+
+.borders {
+    background-color: transparent;
+    display: block;
+}
+
+.overviewBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    gap: 24px;
+    background-color: #ffda8b;
+}
+
+.overviewTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #1c1c1c;
+}
+
+.overviewTextBox {
+    margin-bottom: 16px;
+}
+
+.overviewText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #1c1c1c;
+}
+
+.overviewBox>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:1200px) {
+
+    .overviewContainer {
+        width: 1200px;
+    }
+
+    .borderTop {
+        margin-top: -80px;
+    }
+
+    /* .borderBottom {
+        margin-bottom: -80px;
+    } */
+
+    .borders {
+        width: 1200px;
+        height: 80px;
+    }
+
+    .overviewTitle {
+        font-size: 40px;
+        line-height: 0.75;
+    }
+
+    .overviewBox {
+        gap: 64px;
+    }
+
+    .overviewBox>div {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .overviewTextBox {
+        width: 419px;
+        height: 540px;
+    }
+
+    .mobiles {
+        width: 443px;
+        height: 532px;
+    }
+
+}

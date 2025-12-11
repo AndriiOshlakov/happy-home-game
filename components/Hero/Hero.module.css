@@ -1,0 +1,95 @@
+.hero {
+    margin: 0 auto;
+}
+
+.heroContainer {
+    width: 320px;
+    height: 532px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.5)), url("/HERO/HomeImageMob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .heroContainer {
+        background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.5)), url("/HERO/HomeImageMob2x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.heroTitle {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 24px;
+}
+
+.heroText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.heroContainer>button {
+    border: 5px solid #fffeff;
+    border-radius: 18px;
+    width: 289px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.35);
+    background-color: #fcb825;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+@media screen and (min-width:1200px) {
+    .heroContainer {
+        width: 1200px;
+        height: 920px;
+        background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.5)), url('/HERO/HomeImage.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .heroContainer {
+            background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.5)), url("/HERO/HomeImage2x.jpg");
+        }
+    }
+
+    .heroTitle {
+        font-size: 64px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+
+    .heroText {
+        font-size: 40px;
+        line-height: 1.25;
+    }
+
+}

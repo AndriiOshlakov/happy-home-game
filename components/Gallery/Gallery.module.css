@@ -1,0 +1,108 @@
+.gallery {
+    margin: 0 auto;
+}
+
+.galleryContainer {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryBox {
+    display: flex;
+}
+
+.galleryTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #1c1c1c;
+    margin-bottom: 24px;
+}
+
+.galleryBtnBack,
+.galleryBtnForward {
+    display: none;
+}
+
+.images {
+    width: 320px;
+    display: flex;
+    overflow: hidden;
+    padding: 0 18px;
+    gap: 24px;
+}
+
+.bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+@media screen and (min-width:1200px) {
+    .galleryContainer {
+        width: 1200px;
+        padding: 40px 80px;
+    }
+
+    .galleryBox {
+        gap: 48px;
+    }
+
+    .galleryBtnBack,
+    .galleryBtnForward {
+        display: block;
+    }
+
+    .galleryBtnBack:disabled,
+    .galleryBtnForward:disabled {
+        fill: rgba(0, 0, 0, 0.3)
+    }
+
+    .images {
+        padding: 0;
+        width: 848px;
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        width: 200px;
+        height: 174px;
+    }
+
+    /* Активна картка — масштаб х2 */
+    .active {
+        /* transform: scale(2);
+        transition: transform 0.3s ease; */
+        width: 400px;
+        height: 356px;
+    }
+
+    .bullets {
+        margin-top: 40px;
+    }
+
+    /* Активна bullet фіолетова */
+    .activeBullet {
+        background-color: #8c5cff;
+    }
+
+    .bullet {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+
+}

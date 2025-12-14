@@ -49,7 +49,7 @@ export default function Header() {
               <Link href="#faq">FAQ</Link>
             </li>
             <li>
-              <Link href="#home">Contact</Link>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
           <button className={css.btn} onClick={toggle}>

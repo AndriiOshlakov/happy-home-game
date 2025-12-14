@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Nunito } from 'next/font/google';
 import './globals.css';
+import Footer from '@/components/Footer/Footer';
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${nunito.variable}`}>{children}</body>
+      <body className={`${dmSans.variable} ${nunito.variable}`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

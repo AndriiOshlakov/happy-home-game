@@ -1,0 +1,46 @@
+.footer {
+    margin: 0 auto;
+    background-color: #ef6dc8;
+    width: 100%;
+}
+
+.footerContainer {
+    padding: 24px 16px;
+}
+
+.footerContainer>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    color: #fff;
+    gap: 0 6px;
+    margin-bottom: 16px;
+}
+
+.footerContainer>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width:1200px) {
+
+    .footerContainer {
+        padding: 36px 80px;
+    }
+
+    .footerContainer>ul,
+    .footerContainer>p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+
+}

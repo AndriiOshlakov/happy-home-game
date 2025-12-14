@@ -7,6 +7,7 @@ import Encouters from '@/components/Encouters/Encouters';
 import Gallery from '@/components/Gallery/Gallery';
 import Download from '@/components/Download/Download';
 import Faq from '@/components/Faq/Faq';
+import Contact from '@/components/Contact/Contact';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Gallery />
       <Download />
       <Faq />
+      <Contact />
     </>
   );
 }

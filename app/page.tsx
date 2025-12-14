@@ -5,6 +5,8 @@ import Features from '@/components/Features/Features';
 import Play from '@/components/Play/Play';
 import Encouters from '@/components/Encouters/Encouters';
 import Gallery from '@/components/Gallery/Gallery';
+import Download from '@/components/Download/Download';
+import Faq from '@/components/Faq/Faq';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Play />
       <Encouters />
       <Gallery />
+      <Download />
+      <Faq />
     </>
   );
 }

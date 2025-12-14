@@ -1,0 +1,139 @@
+.download {
+    margin: 0 auto;
+}
+
+/* .download>div>picture {
+    display: flex;
+} */
+
+.downloadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+    background-color: #ffda8b;
+    width: 320px;
+}
+
+.top {
+    background-image: url('/DAWNLOAD/MobUp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 40px;
+}
+
+.bottom {
+    background-image: url('/DAWNLOAD/MoDown.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 40px;
+}
+
+.downloadTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #1c1c1c;
+    margin-bottom: 32px;
+}
+
+.downloadText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #1c1c1c;
+    margin-bottom: 24px;
+}
+
+.btn {
+    display: flex;
+    border: 5px solid #fffeff;
+    border-radius: 18px;
+    width: 289px;
+    padding: 4px 66px;
+    box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.35);
+    background-color: #fcb825;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn:hover {
+    background-color: #fab112;
+}
+
+.btn>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.btnText {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #fff;
+    text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.google {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width:1200px) {
+    .downloadContainer {
+        width: 1200px;
+        padding: 0 0 40px;
+    }
+
+    .top {
+        background-image: url('/DAWNLOAD/DeskUp.png');
+        width: 1200px;
+        height: 80px;
+    }
+
+    .bottom {
+        background-image: url('/DAWNLOAD/DeskDown.png');
+        width: 1200px;
+        height: 80px;
+    }
+
+    .downloadTitle {
+        margin-bottom: 80px;
+        font-size: 40px;
+        line-height: 0.75;
+    }
+
+    .downloadText {
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 0.75;
+    }
+
+
+    .btn {
+        width: 330px;
+        gap: 9px;
+        padding: 8px 86px;
+    }
+
+    .btnText {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .google {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+}

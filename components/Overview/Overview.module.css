@@ -11,10 +11,6 @@
     margin-top: -40px;
 }
 
-/* 
-.borderBottom {
-    margin-bottom: -40px;
-} */
 
 .borders {
     background-color: transparent;
@@ -63,10 +59,6 @@
     .borderTop {
         margin-top: -80px;
     }
-
-    /* .borderBottom {
-        margin-bottom: -80px;
-    } */
 
     .borders {
         width: 1200px;

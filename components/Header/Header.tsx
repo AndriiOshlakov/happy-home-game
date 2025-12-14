@@ -43,10 +43,10 @@ export default function Header() {
           </ul>
           <ul className={`${css.thirdList} ${css.navList}`}>
             <li>
-              <Link href="#home">Download</Link>
+              <Link href="#download">Download</Link>
             </li>
             <li>
-              <Link href="#home">FAQ</Link>
+              <Link href="#faq">FAQ</Link>
             </li>
             <li>
               <Link href="#home">Contact</Link>

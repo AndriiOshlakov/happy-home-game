@@ -22,6 +22,25 @@ export default function Gallery() {
     }
   };
 
+  // --- MOBILE TOUCH SWIPE ---
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX = e.changedTouches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX = e.changedTouches[0].clientX;
+    const distance = touchStartX - touchEndX;
+
+    if (distance > 50) {
+      nextSlide(); // swipe left
+    } else if (distance < -50) {
+      prevSlide(); // swipe right
+    }
+  };
+
   const isPrevDisabled = currentIndex === 0;
   const isNextDisabled = currentIndex === total - 1;
 
@@ -67,7 +86,7 @@ export default function Gallery() {
               <use href="/symbol-defs.svg#back" />
             </svg>
           </button>
-          <ul className={css.images}>
+          <ul className={css.images} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             {visibleImages.map((slide, index) => {
               const isActive = index === activeVisibleIndex;
               return (

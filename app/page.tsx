@@ -8,6 +8,7 @@ import Gallery from '@/components/Gallery/Gallery';
 import Download from '@/components/Download/Download';
 import Faq from '@/components/Faq/Faq';
 import Contact from '@/components/Contact/Contact';
+import CookiesModal from '@/components/CookiesModal/CookiesModal';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Download />
       <Faq />
       <Contact />
+      <CookiesModal />
     </>
   );
 }

@@ -10,14 +10,7 @@ export default function Encouters() {
         <ul className={css.encoutersList}>
           {encouters.map((item, index) => (
             <li className={css.encoutersListItem} key={index}>
-              <Image
-                src={item.img}
-                alt="avatar"
-                width={64}
-                height={68}
-                sizes="(min-width: 1200px) 242px, 256px"
-                className={css.image}
-              />
+              <Image src={item.img} alt="avatar" width={64} height={68} className={css.image} />
               <div className={css.encoutersListItemBox}>
                 <p>{item.text}</p>
               </div>

@@ -7,13 +7,13 @@ export default function Footer() {
       <div className={css.footerContainer}>
         <ul>
           <li>
-            <Link href="/app/privacy/page.tsx">Privacy Policy | </Link>
+            <Link href="/privacy">Privacy Policy | </Link>
           </li>
           <li>
-            <Link href="/app/terms/page.tsx">Terms & Conditions | </Link>
+            <Link href="/terms">Terms & Conditions | </Link>
           </li>
           <li>
-            <Link href="/app/cookies/page.tsx">Cookies Policy</Link>
+            <Link href="/cookies">Cookies Policy</Link>
           </li>
         </ul>
         <p>All rights reserved designwuca.pro | 2025</p>

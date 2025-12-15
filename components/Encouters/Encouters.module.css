@@ -39,6 +39,7 @@
     padding: 8px 16px 8px 0;
     border-top: 1px solid #ffda8b;
     border-bottom: 1px solid #ffda8b;
+    width: 226px;
 }
 
 .encoutersListItem:nth-child(even) {
@@ -77,6 +78,7 @@
     }
 
     .encoutersListItemBox {
+        width: 854px;
         padding: 43px 435px 43px 0;
     }
 

@@ -1,8 +1,8 @@
-.terms {
+.privacy {
     margin: 0 auto;
 }
 
-.termsContainer {
+.privacyContainer {
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,10 @@
     color: #1c1c1c;
 }
 
+.desk {
+    display: none;
+}
+
 .button {
     display: flex;
     align-items: center;
@@ -22,39 +26,20 @@
     gap: 6px;
 }
 
-.desk {
-    display: none;
-}
-
-.termsContainer>h1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #1c1c1c;
-    margin-top: 20px;
-    margin-bottom: 28px;
-}
-
-.termsContainer>ul {
+.privacyContainer>ul {
     list-style-type: disc;
     display: flex;
     flex-direction: column;
     gap: 12px;
     list-style-position: inside;
-    text-decoration: underline;
 }
 
 @media screen and (min-width:1200px) {
-    .termsContainer {
+    .privacyContainer {
         padding: 80px 80px;
         width: 1040px;
         font-size: 20px;
         line-height: 1.5;
-    }
-
-    .termsContainer>h1 {
-        font-size: 40px;
-        line-height: 0.75;
     }
 
     .mob {
@@ -70,8 +55,10 @@
         font-size: 20px;
         line-height: 0.8;
         width: 166px;
-        margin-bottom: 48px;
+        margin-bottom: 68px;
     }
 
-
+    .privacyContainer>h1 {
+        margin-bottom: 28px;
+    }
 }
